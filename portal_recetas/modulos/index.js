@@ -1,0 +1,20 @@
+import { destacadas } from "./recetas.js"
+
+let app = document.getElementById("destacadas")
+
+for(let i = 0; i < destacadas.length; i++){
+
+    app.innerHTML += `
+
+        <div class="tarjeta">
+
+            <img src="${destacadas[i].imagen}" width = "200">
+
+            <h3>${destacadas[i].nombre}</h3>
+
+            <p>${destacadas[i].categoria}</p>
+
+        </div>
+
+    `
+}

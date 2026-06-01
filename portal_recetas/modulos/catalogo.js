@@ -3,8 +3,8 @@ let app = document.getElementById("app")
 
 for(let i = 0; i < recetas.length; i++){
     app.innerHTML += `
-    <div>
-        <img src ="${receta[i].imagen}" width = "200">
+    <div class = "tarjeta">
+        <img src = "${recetas[i].imagen}" "width = "200">
         <h2>${recetas[i].nombre}</h2>
         <p>Categoria: ${recetas[i].categoria}</P>
         <p>Tiempo: ${recetas[i].tiempo}</p>
