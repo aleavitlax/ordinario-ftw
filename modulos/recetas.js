@@ -40,7 +40,7 @@ export let recetas = [
         modo_preparacion: "Exprime los limones en una jarra con agua, añade azúcar al gusto, mezcla bien y sirve con hielo.",
         imagen: "./imagenes/limonada.webp"
     }]
-export let destacadas = [
+    export let destacadas = [
 
     {
         nombre:"Lasagna",
@@ -51,13 +51,13 @@ export let destacadas = [
     {
         nombre:"Cheesecake",
         categoria:"Postre",
-        imagen:"imagenes/cheesecake.jpg"
+        imagen:"./imagenes/cheesecake.jpg"
     },
 
     {
         nombre:"Mojito",
         categoria:"Bebida",
-        imagen:"imagenes/mojito.jpg"
+        imagen:"./imagenes/mojito.jpg"
     }
 
 ]
