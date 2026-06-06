@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<recetas>
+
+    <receta>
+        <id>1</id>
+        <nombre>Pizza</nombre>
+        <categoria>Comida rápida</categoria>
+        <tiempo>25 min</tiempo>
+        <ingredientes>Queso, salsa, pepperoni</ingredientes>
+        <imagen>imagenes/pizza.avif</imagen>
+        <modo_preparacion>
+        Paso 1: Preparar la masa
+        Activar la levadura: En un recipiente, mezcla el agua tibia, 
+        el azúcar y la levadura. Deja reposar de 5 a 10 minutos hasta que salgan burbujas.
+        Mezclar: En un bol grande, pon la harina y haz un hueco en el centro. Vierte la levadura activada, 
+        el aceite de oliva y la sal por los bordes (evita que la sal toque directamente la levadura). 
+        Mezcla todo hasta formar una masa integrada.
+        Amasar: Pasa la masa a una superficie plana y amasa con firmeza durante 8 a 10 minutos hasta que
+        quede suave, elástica y no se pegue a tus manos.
+        Fermentación: Forma una bola con la masa, colócala en un bol ligeramente aceitado y cúbrela con un paño húmedo. 
+        Deja reposar en un lugar cálido durante 1 hora, o hasta que duplique su tamaño.
+        Paso 2: Armar la pizza
+        Estirar: Pasado el tiempo de reposo, aplasta la masa suavemente para quitarle el aire y divídela si quieres
+        hacer varias pizzas. Estírala sobre una superficie enharinada con un rodillo o con tus manos hasta obtener el 
+        grosor deseado.
+        Salsa: Coloca la masa estirada en una bandeja para hornear y esparce una capa uniforme de salsa de tomate, dejando los bordes libres.
+        Toppings: Agrega una buena capa de queso mozzarella y distribuye tus ingredientes 
+        favoritos por encima.
+        Paso 3: HornearPrecalentar: Precalienta el horno a temperatura máxima (idealmente entre 220°C y 250°C) durante unos 20 minutos.
+        Cocción: Hornea la pizza durante 8 a 12 minutos. Sabrás que está lista cuando los bordes estén dorados y crujientes, y 
+        el queso esté completamente derretido y burbujeante.
+        </modo_preparacion>
+    </receta>
+
+    <receta>
+        <id>2</id>
+        <nombre>Hamburguesa</nombre>
+        <categoria>Comida rápida</categoria>
+        <tiempo>40 min</tiempo>
+        <ingredientes>Pan brioche, jitomate, mayonesa, sal, queso, carne de res</ingredientes>
+        <imagen>imagenes/hamburguesa.jpg</imagen>
+        <modo_preparacion>
+       Dora el pan: Unta un poco de mantequilla en el interior de los panes y colócalos en un sartén 
+       o plancha a fuego medio hasta que estén ligeramente tostados y acaramelados. Retíralos.
+       Cocina la carne: Calienta el sartén o plancha a fuego alto. 
+       Agrega un chorrito de aceite y pon la carne. Cocina unos 3 minutos sin moverla para que se forme 
+       una costra deliciosa.
+       Voltea y pon el queso: Dale la vuelta a la hamburguesa y coloca inmediatamente la rebanada de queso encima.
+       Tapa el sartén por un par de minutos para que el queso se derrita a la perfección.
+       Arma tu hamburguesa: Coloca la carne con el queso sobre la base del pan. Agrega el tocino crujiente,
+       vegetales, salsas al gusto y cubre con la tapa del pan.
+        </modo_preparacion>
+        
+    </receta>
+
+     <receta>
+        <id>3</id>
+        <nombre>Hot dog</nombre>
+        <categoria>Comida rápida</categoria>
+        <tiempo>35 min</tiempo>
+        <ingredientes>Pan brioche, jitomate, mayonesa, sal, queso, salchicha, catsup</ingredientes>
+        <imagen>imagenes/hotDog.webp</imagen>
+        
+    </receta>
+
+    <receta>
+        <id>3</id>
+        <nombre>Pastel de Chocolate</nombre>
+        <categoria>Postre</categoria>
+        <tiempo>60 min</tiempo>
+        <ingredientes>Chocolate, harina, huevo</ingredientes>
+        <imagen>imagenes/pastel.jpg</imagen>
+    </receta>
+     <modo_preparacion>
+       1. Prepara las salchichas
+       Estilo norteño/tocino: Envuelve cada salchicha en espiral con una tira de tocino. 
+       Fríelas a fuego medio en un sartén (sin aceite) hasta que el tocino esté crujiente y bien dorado.
+       2. Calienta el pan
+       Abre los panecillos por la mitad y úntales un poco de mantequilla. Colócalos boca abajo en el mismo 
+       sartén donde cocinaste el tocino o las salchichas por unos segundos hasta que estén suaves y ligeramente tostados.
+       3. Arma tu hot dog
+       Unta el interior del pan con mayonesa al gusto. Coloca la salchicha y añade tus aderezos
+    </modo_preparacion>
+
+    <receta>
+        <id>4</id>
+        <nombre>Limonada</nombre>
+        <categoria>Bebida</categoria>
+        <tiempo>10 min</tiempo>
+        <ingredientes>Limón, agua, azúcar</ingredientes>
+        <imagen>imagenes/limonada.webp</imagen>
+        <modo_preparacion>
+            Paso a pasoExprime: Lava bien los limones y extrae todo su jugo. 
+            Retira las semillas para evitar que la bebida se amargue.
+            Disuelve: En una jarra grande, vierte el jugo de limón y añade el azúcar. 
+            Remueve bien hasta que los cristales se disuelvan por completo.
+            Mezcla: Agrega el agua fría a la jarra y vuelve a remover.
+            Enfría: Añade los cubitos de hielo y,si lo deseas, decora con unas rodajas de 
+            limón o unas hojas de menta fresca
+        </modo_preparacion>
+    </receta>
+
+</recetas>

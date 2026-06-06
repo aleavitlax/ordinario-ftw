@@ -1,27 +1,59 @@
-import{recetas} from "./recetas.js"
 let app = document.getElementById("app")
 
-for(let i = 0; i < recetas.length; i++){
-    app.innerHTML += `
-    <div class = "tarjeta">
-        <img src = "${recetas[i].imagen}" width = "200">
-        <h2>${recetas[i].nombre}</h2>
-        <p>Categoria: ${recetas[i].categoria}</P>
-        <p>Tiempo: ${recetas[i].tiempo}</p>
-        <button value = ${i}>Ver receta</button>
-    </div>
-    <hr>
-    
-    `
-}
+fetch("./xml/recetas.xml")
 
-let botones = document.getElementsByTagName("button")
+.then(response => response.text())
 
-for(const key in botones){
-    if(!Object.hasOwn(botones, key))continue;
-    const boton = botones[key]
-    boton.addEventListener("click", mostrar)
-}
+.then(datos => {
+
+    let parser = new DOMParser()
+
+    let xml = parser.parseFromString(datos,"text/xml")
+
+    let recetas = xml.getElementsByTagName("receta")
+
+    for(let i = 0; i < recetas.length; i++){
+
+        let nombre =
+        recetas[i].getElementsByTagName("nombre")[0].textContent
+
+        let categoria =
+        recetas[i].getElementsByTagName("categoria")[0].textContent
+
+        let imagen =
+        recetas[i].getElementsByTagName("imagen")[0].textContent
+
+        app.innerHTML += `
+
+            <div class="tarjeta">
+
+                <img src="${imagen}">
+
+                <h2>${nombre}</h2>
+
+                <p>${categoria}</p>
+
+                <button value="${i}">Ver receta</button>
+
+            </div>
+
+        `
+    }
+    let botones = document.getElementsByTagName("button")
+
+    for(const key in botones){
+
+        if(!Object.hasOwn(botones,key))
+            continue
+
+        const boton = botones[key]
+
+        boton.addEventListener("click", mostrar)
+    }
+
+
+})
+
 
 function mostrar(e){
     let posicion = e.target.value

@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-08"?>
+
+<usuarios>
+    <usuario>
+        <nombre>admin</nombre>
+        <password>1234</password>
+    </usuario>
+
+    <usuario>
+        <nombre>ale</nombre>
+        <password>abdc</password>
+    </usuario>
+
+</usuarios>
