@@ -41,17 +41,9 @@ fetch("./xml/recetas.xml")
     }
     let botones = document.getElementsByTagName("button")
 
-    for(const key in botones){
-
-        if(!Object.hasOwn(botones,key))
-            continue
-
-        const boton = botones[key]
-
-        boton.addEventListener("click", mostrar)
+    for(let i = 0; i< botones.length; i++){
+        botones[i].addEventListener("click", mostrar)
     }
-
-
 })
 
 

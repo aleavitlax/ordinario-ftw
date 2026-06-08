@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/estilo.css">
     <title>Document</title>
 </head>
 <body>
@@ -21,5 +22,31 @@
     <a href="contacto.html">Contacto</a>
 
 </nav>
+
+    <header>
+        <h1>Categorías</h1>
+        <p>Filtra recetas por categoría</p>
+    </header>
+
+    <div style="text-align:center; margin:20px;">
+
+        <select id="categoria">
+
+            <option value="Todas">Todas</option>
+
+            <option value="Comida rápida">Comida rápida</option>
+
+            <option value="Postre">Postre</option>
+
+            <option value="Bebida">Bebida</option>
+
+        </select>
+
+    </div>
+
+    <div id="app"></div>
+
+    <script type="module" src="./modulos/categorias.js"></script>
+
 </body>
 </html>
