@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!DOCTYPE recetas SYSTEM "recetas.dtd">
 <recetas>
 
     <receta>
@@ -61,6 +61,16 @@
         <tiempo>35 min</tiempo>
         <ingredientes>Pan brioche, jitomate, mayonesa, sal, queso, salchicha, catsup</ingredientes>
         <imagen>imagenes/hotDog.webp</imagen>
+        <modo_preparacion>
+       1. Prepara las salchichas
+       Estilo norteño/tocino: Envuelve cada salchicha en espiral con una tira de tocino. 
+       Fríelas a fuego medio en un sartén (sin aceite) hasta que el tocino esté crujiente y bien dorado.
+       2. Calienta el pan
+       Abre los panecillos por la mitad y úntales un poco de mantequilla. Colócalos boca abajo en el mismo 
+       sartén donde cocinaste el tocino o las salchichas por unos segundos hasta que estén suaves y ligeramente tostados.
+       3. Arma tu hot dog
+       Unta el interior del pan con mayonesa al gusto. Coloca la salchicha y añade tus aderezos
+    </modo_preparacion>
         
     </receta>
 
@@ -71,17 +81,22 @@
         <tiempo>60 min</tiempo>
         <ingredientes>Chocolate, harina, huevo</ingredientes>
         <imagen>imagenes/pastel.jpg</imagen>
-    </receta>
-     <modo_preparacion>
-       1. Prepara las salchichas
-       Estilo norteño/tocino: Envuelve cada salchicha en espiral con una tira de tocino. 
-       Fríelas a fuego medio en un sartén (sin aceite) hasta que el tocino esté crujiente y bien dorado.
-       2. Calienta el pan
-       Abre los panecillos por la mitad y úntales un poco de mantequilla. Colócalos boca abajo en el mismo 
-       sartén donde cocinaste el tocino o las salchichas por unos segundos hasta que estén suaves y ligeramente tostados.
-       3. Arma tu hot dog
-       Unta el interior del pan con mayonesa al gusto. Coloca la salchicha y añade tus aderezos
+        <modo_preparacion>
+       Precalentar y preparar: Precalienta el horno a 180°C (350°F). Engrasa y enfarina un molde para pastel, o coloca papel para hornear en el fondo.
+
+        Mezclar ingredientes secos: En un tazón grande, cierne y mezcla la harina, el azúcar, la cocoa, el polvo para hornear, el bicarbonato de sodio y la sal hasta que queden completamente integrados.
+
+        Agregar ingredientes líquidos: Añade los huevos, la leche, el aceite y la esencia de vainilla al tazón de los secos. Bate a velocidad media con una batidora eléctrica (o con un batidor de globo) durante unos 2 minutos, hasta obtener una masa homogénea y sin grumos.
+
+        Incorporar el agua caliente: Reduce la velocidad de la batidora al mínimo y vierte poco a poco la taza de agua hirviendo. No te asustes si la mezcla se vuelve muy líquida, es completamente normal y es el secreto para que quede extra suave.
+
+        Hornear: Vierte la masa con cuidado en el molde preparado y hornea durante 35 a 40 minutos. Sabrás que está listo cuando al insertar un palillo en el centro, este salga limpio.
+
+        Enfriar y servir: Saca el pastel del horno y déjalo enfriar en el molde durante 10 minutos. Después, desmóldalo sobre una rejilla para que se enfríe por completo antes de decorarlo con tu cobertura favorita o ganache de chocolate.
     </modo_preparacion>
+        
+    </receta>
+     
 
     <receta>
         <id>4</id>
@@ -91,7 +106,7 @@
         <ingredientes>Limón, agua, azúcar</ingredientes>
         <imagen>imagenes/limonada.webp</imagen>
         <modo_preparacion>
-            Paso a pasoExprime: Lava bien los limones y extrae todo su jugo. 
+            Paso a paso Exprime: Lava bien los limones y extrae todo su jugo. 
             Retira las semillas para evitar que la bebida se amargue.
             Disuelve: En una jarra grande, vierte el jugo de limón y añade el azúcar. 
             Remueve bien hasta que los cristales se disuelvan por completo.
@@ -106,13 +121,14 @@
         <categoria>Italiana</categoria>
         <tiempo>45 min</tiempo>
         <ingredientes>Láminas de pasta para lasaña, 500g de carne molida, 400g de salsa de tomate, 300g de queso mozzarella, 100g de queso parmesano, cebolla, ajo, sal y pimienta al gusto.</ingredientes>
+        <imagen>imagenes/lasagna.jpg</imagen>
         <modo_preparacion>
             1. Sofreír la cebolla y el ajo picados en una sartén con aceite, añadir la carne molida y cocinar hasta que dore. 
             2. Agregar la salsa de tomate, sazonar con sal y pimienta, y dejar hervir a fuego lento por 10 minutos. 
             3. En un molde para horno, colocar una capa de salsa, una capa de láminas de pasta, más salsa de carne y una capa de queso mozzarella. Repetir el proceso hasta llenar el molde. 
             4. Cubrir con queso parmesano y hornear a 180°C durante 25 minutos hasta que el queso esté bien derretido y dorado.
         </modo_preparacion>
-        <imagen>imagenes/lasagna.jpg</imagen>
+        
     </receta>
 
     <receta>
@@ -121,13 +137,14 @@
         <categoria>Postre</categoria>
         <tiempo>60 min</tiempo>
         <ingredientes>200g de galletas de vainilla, 90g de mantequilla derretida, 600g de queso crema, 300ml de crema para batir, 150g de azúcar, 1 cucharadita de esencia de vainilla, 4 hojas de gelatina (o grenetina).</ingredientes>
+        <imagen>imagenes/cheesecake.jpg</imagen>
         <modo_preparacion>
             1. Triturar las galletas hasta hacerlas polvo, mezclarlas con la mantequilla derretida y compactar la masa en el fondo de un molde desmontable. Congelar por 10 minutos. 
             2. En un tazón grande, batir el queso crema con el azúcar y la esencia de vainilla hasta obtener una mezcla suave sin grumos. 
             3. Hidratar la gelatina en agua fría, disolverla en un poco de crema tibia y añadirla a la mezcla de queso junto con el resto de la crema batida, integrando de forma envolvente. 
             4. Verter la mezcla sobre la base de galletas y refrigerar por un mínimo de 4 a 6 horas (preferiblemente toda la noche) hasta que cuaje firmemente antes de desmoldar.
         </modo_preparacion>
-        <imagen>imagenes/cheesecake.jpg</imagen>
+        
     </receta>
 
     <receta>
@@ -136,13 +153,14 @@
         <categoria>Bebida</categoria>
         <tiempo>10 min</tiempo>
         <ingredientes>10 hojas de hierbabuena fresca, 1 limón (cortado en cuartos), 2 cucharadas de azúcar, 2 oz de ron blanco, agua mineral con gas, hielo picado al gusto.</ingredientes>
+        <imagen>imagenes/mojito.jpg</imagen>
         <modo_preparacion>
             1. En un vaso alto, colocar los cuartos de limón, las hojas de hierbabuena y el azúcar. 
             2. Utilizar un mortero para machacar suavemente los ingredientes en el fondo del vaso, liberando el jugo del limón y los aceites esenciales de la hierbabuena sin romper las hojas. 
             3. Agregar el hielo picado hasta llenar casi todo el vaso y verter las 2 onzas de ron blanco. 
             4. Rellenar el espacio restante con agua mineral con gas, mezclar suavemente de abajo hacia arriba con una cuchara larga y decorar con una ramita extra de hierbabuena.
         </modo_preparacion>
-        <imagen>imagenes/mojito.jpg</imagen>
+        
     </receta>
     <receta>
         <id>8</id>
@@ -150,13 +168,14 @@
         <categoria>Comida rápida</categoria>
         <tiempo>35 min</tiempo>
         <ingredientes>1 kg de alitas de pollo limpias, 1 taza de salsa BBQ, 1/2 taza de harina de trigo, 1 cucharadita de ajo en polvo, 1 cucharadita de pimentón dulce (paprika), sal y pimienta al gusto, aceite para freír.</ingredientes>
+         <imagen>imagenes/alitas.jpg</imagen>
         <modo_preparacion>
             1. Secar muy bien las alitas con papel absorbente. En un tazón grande, mezclar la harina, el ajo en polvo, la paprika, la sal y la pimienta.
             2. Pasar cada alita por la mezcla de harina hasta que queden completamente cubiertas, sacudiendo el exceso.
             3. Calentar abundante aceite en una sartén profunda a fuego medio-alto y freír las alitas en tandas durante 10 a 12 minutos, hasta que estén doradas y crujientes. Retirar y escurrir en papel absorbente.
             4. Colocar las alitas fritas en un tazón limpio, verter la salsa BBQ por encima y mezclar enérgicamente hasta que todas queden bien bañadas. Servir calientes.
         </modo_preparacion>
-        <imagen>imagenes/alitas.jpg</imagen>
+       
     </receta>
 
     <receta>
@@ -165,13 +184,14 @@
         <categoria>Comida rápida</categoria>
         <tiempo>25 min</tiempo>
         <ingredientes>500g de papas a la francesa (pueden ser congeladas), 150g de queso cheddar para derretir, 4 tiras de tocino, 2 cucharadas de crema agria, 1 ramita de cebollín picado, sal al gusto, aceite para freír.</ingredientes>
+        <imagen>imagenes/papas.jpg</imagen>
         <modo_preparacion>
             1. Calentar el aceite y freír las papas hasta que estén bien doradas y crujientes. Al salir, espolvorearles un poco de sal y colocarlas en un plato amplio que sirva como base.
             2. En una sartén aparte a fuego medio, cocinar las tiras de tocino hasta que estén bien crujientes. Retirar el exceso de grasa con papel absorbente y picarlas en trozos pequeños.
             3. Rallar o picar el queso cheddar y derretirlo a baño María o en el microondas en lapsos de 15 segundos con una cucharada de leche para que quede fluido.
             4. Bañar las papas calientes con el queso cheddar derretido, esparcir los trocitos de tocino crujiente encima, añadir la crema agria en el centro y decorar con el cebollín fresco picado.
         </modo_preparacion>
-        <imagen>imagenes/papas.jpg</imagen>
+        
     </receta>
 
     <receta>
@@ -180,13 +200,14 @@
         <categoria>Postre</categoria>
         <tiempo>30 min</tiempo>
         <ingredientes>150g de chocolate negro para repostería, 100g de mantequilla, 1 taza de azúcar, 2 huevos, 1/2 taza de harina de trigo, 1 cucharadita de esencia de vainilla, 50g de nueces picadas, una pizca de sal.</ingredientes>
+        <imagen>imagenes/brownie.jpg</imagen>
         <modo_preparacion>
             1. Precalentar el horno a 180°C. En un tazón apto para microondas, colocar el chocolate troceado junto con la mantequilla y derretir en intervalos de 30 segundos, mezclando bien hasta tener una crema lisa.
             2. Añadir el azúcar al chocolate derretido y batir. Incorporar los huevos uno a uno, integrando por completo, junto con la esencia de vainilla.
             3. Tamizar la harina y la pizca de sal sobre la mezcla, revolviendo suavemente con una espátula solo hasta que no se vean rastros de harina. Agregar las nueces picadas al final de forma envolvente.
             4. Verter la masa en un molde rectangular previamente enharinado o con papel para hornear. Hornear durante 20 minutos (el centro debe quedar ligeramente húmedo). Dejar enfriar antes de cortar en cuadros.
         </modo_preparacion>
-        <imagen>imagenes/brownie.jpg</imagen>
+        
     </receta>
 
     <receta>
@@ -195,13 +216,14 @@
         <categoria>Bebida</categoria>
         <tiempo>5 min</tiempo>
         <ingredientes>1 taza de leche entera o vegetal, 1 taza de cubos de hielo, 5 galletas Oreo (y una extra para decorar), 2 cucharadas de jarabe de chocolate, crema batida al gusto.</ingredientes>
+         <imagen>imagenes/frappe.jpg</imagen>
         <modo_preparacion>
             1. En el vaso de la licuadora, verter la taza de leche y añadir los cubos de hielo para asegurar una consistencia cremosa.
             2. Trocear las 5 galletas Oreo con las manos y agregarlas a la licuadora junto con una cucharada de jarabe de chocolate.
             3. Licuar a máxima potencia durante aproximadamente 1 minuto o hasta que el hielo esté completamente granizado y no queden trozos grandes de galleta.
             4. Decorar las paredes de un vaso alto con el jarabe de chocolate restante, verter el frappé con cuidado, coronar con una buena porción de crema batida y terminar espolvoreando la galleta Oreo extra bien triturada.
         </modo_preparacion>
-        <imagen>imagenes/frappe.jpg</imagen>
+       
     </receta>
     <receta>
         <id>12</id>
@@ -209,13 +231,14 @@
         <categoria>Comida rápida</categoria>
         <tiempo>30 min</tiempo>
         <ingredientes>500g de pechuga de pollo cortada en cubos, 1 taza de salsa búfalo, 1 huevo, 1/2 taza de leche, 1 taza de harina de trigo, 1/2 taza de pan molido, 1 cucharadita de pimienta cayena, sal al gusto, aceite para freír.</ingredientes>
+        <imagen>imagenes/boneless.jpg</imagen>
         <modo_preparacion>
             1. En un tazón, batir el huevo junto con la leche y una pizca de sal. En otro recipiente plano, mezclar la harina, el pan molido, la pimienta cayena y un poco más de sal.
             2. Pasar los cubos de pechuga de pollo primero por la mezcla líquida de huevo y luego revolcarlos en la mezcla de harina asegurando que queden completamente cubiertos.
             3. Calentar abundante aceite en una sartén a fuego medio-alto. Freír los trozos de pollo en tandas pequeñas durante 6 a 8 minutos hasta que el rebozado esté crujiente y bien dorado. Retirar y escurrir el exceso de aceite.
             4. Colocar los boneless en un recipiente grande, verter la salsa búfalo por encima y sacudir el tazón con cuidado para que todos los trozos se impregnen uniformemente con la salsa ácida y picante. Servir con aderezo ranch.
         </modo_preparacion>
-        <imagen>imagenes/boneless.jpg</imagen>
+        
     </receta>
 
     <receta>
@@ -224,13 +247,14 @@
         <categoria>Comida rápida</categoria>
         <tiempo>20 min</tiempo>
         <ingredientes>2 cebollas blancas grandes, 1 taza de harina de trigo, 1 cucharadita de polvo para hornear, 1 cucharadita de paprika, 1 huevo, 1 taza de leche fría, 1 taza de pan molido (panko de preferencia), sal al gusto, aceite para freír.</ingredientes>
+        <imagen>imagenes/aros.avif</imagen>
         <modo_preparacion>
             1. Pelar las cebollas y cortarlas en rodajas gruesas de aproximadamente 1 centímetro de ancho, separando con cuidado los anillos individuales.
             2. En un tazón, mezclar la harina, el polvo para hornear, la paprika y la sal. Pasar todos los aros de cebolla secos por esta harina suelta para que se les adhiera una capa fina y reservar.
             3. Al resto de la mezcla de harina que quedó en el tazón, agregarle el huevo y la leche fría, batiendo con un tenedor hasta formar una pasta suave y semilíquida.
             4. Sumergir cada aro en la pasta líquida, pasarlo inmediatamente por el pan molido presionando un poco para que se pegue bien, y freír en aceite muy caliente durante 2 o 3 minutos hasta que tomen un color dorado hermoso.
         </modo_preparacion>
-        <imagen>imagenes/aros.avif</imagen>
+        
     </receta>
 
     <receta>
@@ -239,13 +263,14 @@
         <categoria>Postre</categoria>
         <tiempo>20 min</tiempo>
         <ingredientes>200g de dulce de leche (cajeta espesa), 2 huevos enteros, 2 yemas de huevo, 2 cucharadas de azúcar, 3 cucharadas de harina de trigo, 50g de mantequilla derretida.</ingredientes>
+        <imagen>imagenes/volcan.jpg</imagen>
         <modo_preparacion>
             1. Precalentar el horno a 200°C. En un tazón mediano, batir enérgicamente los 2 huevos enteros, las 2 yemas y las cucharadas de azúcar hasta que la mezcla se aclare un poco y se vea espumosa.
             2. Agregar el dulce de leche y la mantequilla derretida al tazón, incorporándolos con movimientos suaves hasta obtener una crema uniforme de color café claro.
             3. Tamizar la harina sobre la preparación e integrarla usando una espátula de manera envolvente, cuidando de no batir de más para que el postre mantenga su textura ligera.
             4. Verter la masa en moldes individuales para flan (previamente engrasados con mantequilla y espolvoreados con un toque de harina) y hornear estrictamente durante 10 a 12 minutos. Los bordes deben verse cocidos pero el centro debe quedar blando para que al romperlo brote el dulce de leche líquido.
         </modo_preparacion>
-        <imagen>imagenes/volcan.jpg</imagen>
+        
     </receta>
 
     <receta>
@@ -254,13 +279,14 @@
         <categoria>Postre</categoria>
         <tiempo>15 min</tiempo>
         <ingredientes>1 lata de leche condensada (380g), 1 lata de leche evaporada (360g), 1/2 taza de jugo de limón puro (recién exprimido), 2 paquetes de galletas María (o galletas de vainilla similares).</ingredientes>
+        <imagen>imagenes/carlota.webp</imagen>
         <modo_preparacion>
             1. En el vaso de la licuadora, verter la lata de leche condensada junto con la leche evaporada y comenzar a licuar a velocidad media para que se integren.
             2. Sin apagar la licuadora, añadir el jugo de limón poco a poco en forma de hilo. Notarás que la reacción ácida del limón hará que las leches se espesen inmediatamente formando una crema tersa.
             3. En un molde de vidrio o refractario rectangular, colocar una primera capa uniforme de galletas María en el fondo, cubriendo los huecos vacíos.
             4. Verter una capa de la crema de limón sobre las galletas y extenderla con una cuchara. Repetir alternando capas de galleta y crema hasta llenar el molde (terminando con crema). Refrigerar por al menos 2 horas antes de rebanar.
         </modo_preparacion>
-        <imagen>imagenes/carlota.webp</imagen>
+        
     </receta>
 
     <receta>
@@ -269,13 +295,14 @@
         <categoria>Bebida</categoria>
         <tiempo>10 min</tiempo>
         <ingredientes>3 bolas grandes de helado de vainilla, 1/2 taza de leche entera, 1 rebanada pequeña de pastel red velvet (o 1 cucharada de cacao en polvo y una gota de colorante vegetal rojo), crema batida y chispas de chocolate para decorar.</ingredientes>
+         <imagen>imagenes/malteada.jpg</imagen>
         <modo_preparacion>
             1. Colocar en la licuadora las bolas de helado de vainilla junto con la media taza de leche fría.
             2. Desmoronar la rebanada de pastel red velvet dentro del vaso de la licuadora para aportar tanto el color característico como el sutil sabor a chocolate y vainilla.
             3. Licuar a velocidad baja durante unos 30 segundos, subiendo la potencia al final por unos instantes hasta que la textura sea completamente homogénea, cremosa y adquiera un tono rosa intenso.
             4. Servir la malteada de inmediato en un vaso de cristal alto, añadir una montaña generosa de crema batida en la superficie y decorar espolvoreando trocitos extra de pastel o chispas de chocolate.
         </modo_preparacion>
-        <imagen>imagenes/malteada.jpg</imagen>
+       
     </receta>
 
     <receta>
@@ -284,13 +311,14 @@
         <categoria>Bebida</categoria>
         <tiempo>5 min</tiempo>
         <ingredientes>1 taza de jugo de tomate con almejas (Clamato), el jugo de 2 limones, 3 gotas de salsa inglesa, 2 gotas de salsa tabasco (opcional), 1 pizca de pimienta negra molida, sal de grano y chile en polvo (tipo Tajín) para escarchar, hielo al gusto, 1 varita de apio.</ingredientes>
+        <imagen>imagenes/clamato.jpg</imagen>
         <modo_preparacion>
             1. Humedecer el borde de un vaso grande con un trozo de limón y pasarlo boca abajo sobre un plato plano con sal y chile en polvo para dejarlo perfectamente escarchado.
             2. Llenar el vaso hasta la mitad con cubos de hielo grandes. Verter el jugo de los dos limones directamente sobre los hielos.
             3. Añadir las gotas de salsa inglesa, la salsa tabasco para darle un toque picante, y la pizca de pimienta negra molida para sazonar el fondo.
             4. Rellenar el vaso con el jugo de tomate frío, mezclar todo delicadamente con una cuchara larga para integrar los sabores y colocar la varita de apio por un lado como decoración y removedor.
         </modo_preparacion>
-        <imagen>imagenes/clamato.jpg</imagen>
+        
     </receta>
 
 

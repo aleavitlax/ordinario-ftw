@@ -1,0 +1,12 @@
+<!ELEMENT recetas (receta+)>
+
+<!ELEMENT receta
+(id,nombre,categoria,tiempo,ingredientes,imagen,modo_preparacion)>
+
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT categoria (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ELEMENT ingredientes (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT modo_preparacion (#PCDATA)>
