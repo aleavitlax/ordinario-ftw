@@ -1,231 +1,614 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:#f5f5f5;
+body {
+    font-family: 'Segoe UI', Arial, sans-serif; /* Tipografía un poco más moderna */
+    background-color: #fcf8f6; /* Un fondo crema/blanco más cálido que le va a la comida */
+    color: #333;
 }
 
-nav{
-
-    background-color:#ff7043;
-
-    padding:15px;
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:25px;
+nav {
+    background: linear-gradient(135deg, #ff7043, #f4511e); /* Degradado moderno */
+    padding: 18px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 4px 12px rgba(244, 81, 30, 0.2); /* Sombra naranja suave */
+    position: sticky; /* Se queda fija arriba al bajar */
+    top: 0;
+    z-index: 1000;
 }
 
-nav a{
-
-    text-decoration:none;
-
-    color:white;
-
-    font-weight:bold;
-
-    font-size:18px;
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
-nav a:hover{
-
-    color:#ffe0b2;
-}
-header{
-
-    text-align:center;
-
-    padding:50px;
-
-    background:white;
-
-    margin:20px;
-
-    border-radius:15px;
+nav a:hover {
+    color: #ff7043;
+    background-color: white; /* Efecto de botón invertido al pasar el cursor */
+    transform: translateY(-2px);
 }
 
-header h1{
 
-    color:#ff7043;
-
-    margin-bottom:15px;
-}
-#app{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-    gap:20px;
-
-    padding:20px;
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    margin: 25px auto;
+    max-width: 1200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-.tarjeta{
-
-    width:250px;
-
-    background:white;
-
-    border-radius:15px;
-
-    overflow:hidden;
-
-    text-align:center;
-
-    box-shadow:0px 3px 10px rgba(0,0,0,0.2);
-
-    transition:0.3s;
-}
-.tarjeta h2{
-
-    margin:10px;
-
-    color:#ff7043;
-
-    font-size:20px;
-}
-button{
-
-    margin-top:10px;
-
-    padding:10px;
-
-    border:none;
-
-    border-radius:8px;
-
-    background-color:#ff7043;
-
-    color:white;
-
-    cursor:pointer;
+header h1 {
+    color: #f4511e;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 8px;
 }
 
-button:hover{
-
-    background-color:#e64a19;
-}
-.hero{
-
-    display:flex;
-
-    justify-content:center;
-
-    margin:20px;
+header p {
+    color: #666;
+    font-size: 1.1rem;
 }
 
-.hero img{
 
-    width:90%;
-
-    height:450px;
-
-    object-fit:cover;
-
-    border-radius:20px;
+.hero {
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    position: relative;
 }
-#destacadas{
 
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-    margin:30px;
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 24px;
+    /* Un truco: agregamos una sombra más profunda y difuminada para que flote sobre el fondo */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+    filter: brightness(0.95); /* Hace que los colores del texto resalten más si decides ponerle algo encima */
+    transition: transform 0.5s ease;
 }
-.tarjeta img{
 
-    width:100%;
-
-    height:180px;
-
-    object-fit:cover;
-
-    border-radius:10px;
+.hero:hover img {
+    transform: scale(1.01);
 }
-.tarjeta:hover{
 
-    transform:translateY(-8px);
+
+#app, #destacadas, #categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-#categorias{
 
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-    margin:30px;
+.tarjeta {
+    width: 280px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid rgba(0,0,0,0.03);
+    padding-bottom: 20px;
 }
-.login{
 
-    width:350px;
-
-    margin:50px auto;
-
-    background:white;
-
-    padding:25px;
-
-    border-radius:15px;
-
-    box-shadow:0px 3px 10px rgba(0,0,0,0.2);
-
-    text-align:center;
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 28px rgba(244, 81, 30, 0.15); /* Sombra naranja al flotar */
 }
-.login input{
 
-    width:100%;
-
-    padding:10px;
-
-    margin-top:15px;
-
-    border:1px solid #ccc;
-
-    border-radius:8px;
+.tarjeta img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
-.login button{
 
-    width:100%;
-
-    margin-top:20px;
+.tarjeta:hover img {
+    transform: scale(1.05); /* Efecto zoom en la foto de comida */
 }
-#mensaje{
 
-    margin-top:15px;
-
-    font-weight:bold;
+.tarjeta h2 {
+    margin: 15px 10px 5px 10px;
+    color: #222;
+    font-size: 19px;
+    font-weight: 700;
 }
-/* SELECT DE CATEGORIAS */
 
-#categoria{
+.tarjeta p {
+    color: #ff7043;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
 
-    padding:10px;
 
-    width:250px;
+button, .tarjeta button {
+    margin-top: 10px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 25px; /* Más redondeados = más amigables/modernos */
+    background: linear-gradient(135deg, #ff7043, #f4511e);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(244, 81, 30, 0.3);
+    transition: all 0.3s ease;
+}
 
-    border:none;
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(244, 81, 30, 0.4);
+    background: linear-gradient(135deg, #f4511e, #d84315);
+}
 
-    border-radius:10px;
+.filtro-contenedor {
+    text-align: center;
+    margin: 20px auto;
+}
 
-    font-size:16px;
+#categoria {
+    padding: 12px 20px;
+    width: 280px;
+    border: 2px solid #ffe0b2;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7043' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+}
 
-    box-shadow:0px 2px 8px rgba(0,0,0,0.2);
+#categoria:focus {
+    border-color: #ff7043;
+    box-shadow: 0 4px 15px rgba(244, 81, 30, 0.15);
+}
 
-    cursor:pointer;
+table {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-collapse: separate; /* Permite bordes redondeados en tablas */
+    border-spacing: 0;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+th {
+    background: linear-gradient(135deg, #ff7043, #f4511e);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+td {
+    padding: 16px;
+    text-align: center;
+    color: #555;
+    font-size: 15px;
+    border-bottom: 1px solid #f1f1f1;
+    transition: all 0.2s ease;
+}
+
+tr:last-child td {
+    border-bottom: none; 
+}
+
+tr:hover td {
+    background: #fff3e0; 
+    color: #d84315;
+    font-weight: 500;
+}
+
+
+.contacto, .login {
+    width: 500px;
+    max-width: 90%;
+    margin: 40px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.login { width: 380px; }
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.login input {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+.contacto input:focus, .login input:focus, .contacto textarea:focus {
+    border-color: #ff7043;
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(255, 112, 67, 0.1);
+    outline: none;
+}
+
+.contacto textarea {
+    width: 100%;
+    height: 140px;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 15px;
+    resize: none;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.contacto h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 18px;
+}
+
+.contacto label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #555;
+}
+
+.contacto input[type="radio"],
+.contacto input[type="checkbox"] {
+    accent-color: #ff7043; 
+    width: 18px;
+    height: 18px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+        gap: 12px;
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero img {
+        height: 250px; 
+    }
+    
+    table {
+        width: 100%;
+        font-size: 13px; 
+    }
+    
+    th, td {
+        padding: 10px 6px;
+    }
+}
+
+
+.titulo {
+    text-align: center;
+    color: #222;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 40px auto 20px auto;
+    position: relative;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+
+.titulo::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, #ff7043, #f4511e);
+    margin: 8px auto 0 auto;
+    border-radius: 2px;
+}
+/* ==========================================
+   ESTILOS PARA LA PÁGINA DE DETALLE DE RECETA
+   ========================================== */
+
+/* Contenedor principal del detalle (Afecta al #app en detalle.html) */
+#app-detalle {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide la pantalla en dos columnas: foto e info */
+    gap: 30px;
+}
+
+/* Cuando la pantalla sea chica (móvil), se vuelve una sola columna */
+@media (max-width: 768px) {
+    #app-detalle {
+        grid-template-columns: 1fr;
+        margin: 15px;
+        padding: 20px;
+    }
+}
+
+/* Contenedor de la imagen de la receta */
+.detalle-foto-contenedor {
+    width: 100%;
+}
+
+.detalle-foto-contenedor img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* Columna derecha: información de la receta */
+.detalle-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detalle-info h2 {
+    font-size: 2.2rem;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+/* Píldoras de información (Categoría y Tiempo) */
+.meta-receta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.pildora-meta {
+    background-color: #fff3e0;
+    color: #e4511e;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Bloques de contenido: Ingredientes y Preparación */
+.seccion-contenido {
+    margin-top: 20px;
+    width: 100%;
+    grid-column: span 2; /* Hace que ocupen todo el ancho abajo de la foto */
+}
+
+/* Ajuste para pantallas móviles */
+@media (max-width: 768px) {
+    .seccion-contenido {
+        grid-column: span 1;
+    }
+}
+
+.seccion-contenido h3 {
+    color: #ff7043;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 6px;
+}
+
+.seccion-contenido p {
+    font-size: 16px;
+    line-height: 1.8; /* Más espacio entre líneas para que no canse la vista */
+    color: #555;
+    white-space: pre-line; /* Respeta los saltos de línea de tu XML */
+}
+
+/* Botón "Volver al catálogo" estilo botón flotante */
+.enlace-volver {
+    display: inline-block;
+    margin: 20px auto 40px auto;
+    text-align: center;
+    text-decoration: none;
+    background: #e0e0e0;
+    color: #555;
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.enlace-volver:hover {
+    background: #ff7043;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 112, 67, 0.3);
+}
+
+/* Centrar el contenedor del botón de regreso */
+.volver-contenedor {
+    text-align: center;
+    width: 100%;
+}
+/* ==========================================
+   BARRA SUPERIOR DEL LOGIN (MEJORADA)
+   ========================================== */
+.login-header-bar {
+    background: linear-gradient(135deg, #ff7043, #f4511e); /* Degradado premium */
+    padding: 25px 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(244, 81, 30, 0.15);
+}
+
+.login-header-bar h1 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.login-header-bar p {
+    font-size: 1rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+/* ==========================================
+   TARJETA CONTENEDORA DEL LOGIN
+   ========================================== */
+.login {
+    width: 850px;
+    max-width: 95%;
+    margin: 50px auto;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide 50% imagen y 50% formulario */
+    align-items: stretch;           /* Hace que ambas columnas midan lo mismo de alto */
+    overflow: hidden;               /* ¡CLAVE! Corta la foto para que se pegue al borde redondeado */
+}
+
+/* Columna Izquierda: Contenedor de la foto sin espacios en blanco */
+.login-foto {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.login-foto img {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;             /* Asegura una excelente altura para que luzca la comida */
+    object-fit: cover;             /* Se encarga de centrar y ajustar la imagen perfectamente */
+    display: block;                /* Quita espacios vacíos fantasmas abajo de la imagen */
+}
+
+/* Columna Derecha: Contenedor del formulario */
+.login-form {
+    padding: 50px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;       /* Centra verticalmente el formulario */
+    text-align: left;
+}
+
+.login-form h2 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Inputs y Botones del Formulario */
+.login-form input {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 15px;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #ff7043;
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(255, 112, 67, 0.1);
+    outline: none;
+}
+
+.login-form button {
+    width: max-content;            /* Se ajusta al tamaño del texto */
+    padding: 12px 40px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #ff7043, #f4511e);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(244, 81, 30, 0.3);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.login-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(244, 81, 30, 0.4);
+    background: linear-gradient(135deg, #f4511e, #d84315);
+}
+
+/* Versión Responsiva para Celulares */
+@media (max-width: 768px) {
+    .login {
+        grid-template-columns: 1fr;
+        width: 420px;
+    }
+    .login-foto {
+        height: 220px;
+    }
+    .login-foto img {
+        min-height: auto;
+    }
+    .login-form {
+        padding: 35px 25px;
+        text-align: center;
+    }
+    .login-form button {
+        width: 100%;               /* En celular el botón sí abarca todo el ancho */
+    }
 }
